@@ -1,4 +1,4 @@
-# Previsão de Preços de Imóveis: Regressão Avançada com o Dataset Ames
+# Previsão de Preços de Imóveis: Regressão com o Dataset Ames
 
 Este projeto foca na predição de preços de venda de imóveis utilizando o conjunto de dados Ames Housing, fornecido na competição "House Prices - Advanced Regression Techniques" do Kaggle. A ideia principal foi explorar diferentes técnicas de regressão para construir um modelo que estimasse bem os preços dos imóveis.
 
