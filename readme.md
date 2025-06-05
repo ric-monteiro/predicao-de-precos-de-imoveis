@@ -31,11 +31,7 @@ O processo foi dividido em quatro grandes partes:
 * As previsões foram consolidadas no `submission.csv`.
 * O notebook `code.ipynb` contém todo o fluxo de trabalho, desde a importação dos dados até a geração das previsões finais.
 
-<<<<<<< HEAD
 ## Tecnologias Utilizadas
-=======
-## 💻 Ferramentas Utilizadas
->>>>>>> 24346da5475ae45b5824e08d93e75798fad3fb3e
 
 * **Python**: Linguagem de programação principal.
 * **Pandas**: Para manipulação e análise de dados.
