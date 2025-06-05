@@ -2,7 +2,7 @@
 
 Este projeto foca na predição de preços de venda de imóveis utilizando o conjunto de dados Ames Housing, fornecido na competição "House Prices - Advanced Regression Techniques" do Kaggle. O objetivo principal é desenvolver e avaliar modelos de regressão para estimar os preços com base em múltiplas características dos imóveis.
 
-## ⚙️ Etapas do Projeto
+## Etapas do Projeto
 
 O desenvolvimento do projeto seguiu as seguintes etapas principais:
 
@@ -25,13 +25,13 @@ O desenvolvimento do projeto seguiu as seguintes etapas principais:
     * O modelo final treinado foi utilizado para gerar as previsões de `SalePrice` para cada imóvel no conjunto de teste.
     * As previsões foram formatadas no arquivo `submission.csv`, contendo as colunas `Id` e `SalePrice`, conforme as especificações da competição Kaggle. A métrica de avaliação da competição é o Erro Quadrático Médio Logarítmico Raiz (RMSLE) entre o logaritmo do valor previsto e o logaritmo do valor de venda observado.
 
-## 📊 Resultados
+## Resultados
 
 * O projeto resultou em um modelo preditivo capaz de estimar os preços de venda de imóveis com base nas características fornecidas.
 * As previsões para o conjunto de teste estão consolidadas no arquivo `submission.csv`.
 * O notebook `code.ipynb` contém todo o fluxo de trabalho, desde a importação dos dados até a geração das previsões finais, detalhando as análises e as etapas de modelagem.
 
-## 💻 Tecnologias Utilizadas
+## Tecnologias Utilizadas
 
 * **Python**: Linguagem de programação principal.
 * **Pandas**: Para manipulação e análise de dados.
@@ -41,7 +41,7 @@ O desenvolvimento do projeto seguiu as seguintes etapas principais:
 * **TensorFlow & Yggdrasil Decision Forests (`ydf`)**: Bibliotecas para construção e treinamento de modelos avançados de machine learning.
 * **Jupyter Notebook**: Para desenvolvimento interativo, documentação e apresentação do código.
 
-## 🚀 Possíveis Próximos Passos
+## Possíveis Próximos Passos
 
 * Investigar técnicas mais avançadas de engenharia de *features*.
 * Realizar uma otimização de hiperparâmetros mais extensiva (ex: *Grid Search*, *Random Search*, Otimização Bayesiana).
