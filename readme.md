@@ -1,58 +1,58 @@
-# Previsão de Preços de Imóveis: Regressão com o Dataset Ames
+# House Price Prediction: Regression with the Ames Dataset
 
-Este projeto foca na predição de preços de venda de imóveis utilizando o conjunto de dados Ames Housing, fornecido na competição "House Prices - Advanced Regression Techniques" do Kaggle. A ideia principal foi explorar diferentes técnicas de regressão para construir um modelo que estimasse bem os preços dos imóveis.
+This project focuses on predicting home sale prices using the Ames Housing dataset, provided in the "House Prices - Advanced Regression Techniques" Kaggle competition. The main idea was to explore different regression techniques to build a model that could accurately estimate property prices.
 
-## Etapas do Projeto
+## Project Steps
 
-O processo foi dividido em quatro grandes partes:
+The process was divided into four main parts:
 
-1.  **Carregamento e Análise Exploratória dos Dados (EDA)**:
-    * Os conjuntos de dados de treino (`train.csv`) e teste (`test.csv`) foram carregados com Pandas.
-    * O arquivo `data_description.txt` foi consultado para entender as 79 variáveis explicativas.
-    * Visualizações com Matplotlib e Seaborn ajudaram a entender distribuições, valores ausentes, outliers e correlações com o preço de venda (SalePrice).
+1.  **Data Loading and Exploratory Data Analysis (EDA)**:
+    * The training (`train.csv`) and testing (`test.csv`) datasets were loaded using Pandas.
+    * The `data_description.txt` file was consulted to understand the 79 explanatory variables.
+    * Visualizations with Matplotlib and Seaborn helped in understanding distributions, missing values, outliers, and correlations with the sale price (SalePrice).
 
-2.  **Pré-processamento e Engenharia de Features**:
-    * Valores ausentes foram tratados com estratégias específicas para cada tipo de dado.
-    * Variáveis categóricas foram transformadas em valores numéricos usando técnicas como one-hot encoding e label encoding.
-    * Algumas novas *features* também foram criadas para melhorar o modelo, como uma variável que combina o ano de construção com o ano de reforma para representar a "idade real" da casa.
+2.  **Preprocessing and Feature Engineering**:
+    * Missing values were handled with specific strategies for each data type.
+    * Categorical variables were transformed into numerical values using techniques like one-hot encoding and label encoding.
+    * Some new *features* were also created to improve the model, such as a variable that combines the construction year with the renovation year to represent the "real age" of the house.
 
-3.  **Seleção, Treinamento e Avaliação de Modelos**:
-    * Como modelo de regressão, foi usado o Random Forest e as bibliotecas TensorFow e Yggdrasil Decision Forests.
-    * O conjunto de treinamento (`train.csv`) foi utilizado para treinar os modelos. Técnicas como validação cruzada ajudaram a avaliar o desempenho dos modelos e ajustar hiperparâmetros.
+3.  **Model Selection, Training, and Evaluation**:
+    * Random Forest was used as the regression model, along with the TensorFlow and Yggdrasil Decision Forests libraries.
+    * The training set (`train.csv`) was used to train the models. Techniques like cross-validation helped evaluate model performance and tune hyperparameters.
 
-4.  **Geração de Previsões e Submissão**:
-    * O mesmo pré-processamento foi aplicado aos dados de teste.
-    * O modelo final gerou as previsões de preço `SalePrice`, que foram salvas no arquivo
-    * A métrica usada para avaliação foi o RMSLE (Erro Quadrático Médio Logarítmico Raiz), conforme as regras da competição.
+4.  **Generating Predictions and Submission**:
+    * The same preprocessing was applied to the test data.
+    * The final model generated the `SalePrice` predictions, which were saved to the file.
+    * The metric used for evaluation was RMSLE (Root Mean Squared Logarithmic Error), as per the competition rules.
 
-## Resultados
+## Results
 
-* O modelo treinado conseguiu prever os preços com uma boa margem de acerto, levando em conta as variáveis disponíveis. Alcançando o score de 0.14857 na competição do Kaggle.
-* As previsões foram consolidadas no `submission.csv`.
-* O notebook `code.ipynb` contém todo o fluxo de trabalho, desde a importação dos dados até a geração das previsões finais.
+* The trained model was able to predict prices with a good margin of accuracy, considering the available variables. It achieved a score of 0.14857 in the Kaggle competition.
+* The predictions were consolidated in `submission.csv`.
+* The `code.ipynb` notebook contains the entire workflow, from data import to the generation of final predictions.
 
-## Tecnologias Utilizadas
+## Technologies Used
 
-* **Python**: Linguagem de programação principal.
-* **Pandas**: Para manipulação e análise de dados.
-* **NumPy**: Para operações numéricas.
-* **Scikit-learn**: Para pré-processamento, implementação de modelos (como Random Forest) e métricas de avaliação.
-* **Matplotlib & Seaborn**: Para visualização de dados.
-* **TensorFlow & Yggdrasil Decision Forests (`ydf`)**: Bibliotecas para construção e treinamento de modelos avançados de machine learning.
+* **Python**: The main programming language.
+* **Pandas**: For data manipulation and analysis.
+* **NumPy**: For numerical operations.
+* **Scikit-learn**: For preprocessing, implementation of models (like Random Forest), and evaluation metrics.
+* **Matplotlib & Seaborn**: For data visualization.
+* **TensorFlow & Yggdrasil Decision Forests (`ydf`)**: Libraries for building and training advanced machine learning models.
 
-## Possíveis Próximos Passos
+## Possible Next Steps
 
-* Testar abordagens mais criativas de criação de *features*.
-* Otimizar melhor os hiperparâmetros com técnicas como Grid Search, Random Search ou até Otimização Bayesiana.
-* Explorar modelos de ensemble mais sofisticados.
-* Analisar os erros do modelo para entender onde ele pode melhorar.
+* Test more creative feature creation approaches.
+* Better optimize hyperparameters with techniques like Grid Search, Random Search, or even Bayesian Optimization.
+* Explore more sophisticated ensemble models.
+* Analyze the model's errors to understand where it can be improved.
 
 ---
 
-## Citações
+## Citations
 
-* **Competição Kaggle:**
+* **Kaggle Competition:**
     Anna Montoya and DataCanary. House Prices - Advanced Regression Techniques. [https://kaggle.com/competitions/house-prices-advanced-regression-techniques](https://kaggle.com/competitions/house-prices-advanced-regression-techniques), 2016. Kaggle.
 
-* **Conjunto de Dados Ames Housing:**
-    O conjunto de dados Ames Housing foi compilado por Dean De Cock para uso em educação em ciência de dados. É uma alternativa moderna e expandida ao frequentemente usado conjunto de dados Boston Housing.
+* **Ames Housing Dataset:**
+    The Ames Housing dataset was compiled by Dean De Cock for use in data science education. It is a modern and expanded alternative to the frequently used Boston Housing dataset.
